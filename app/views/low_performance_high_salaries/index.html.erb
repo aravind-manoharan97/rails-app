@@ -32,7 +32,7 @@
 				<h4> <b>Average Salary :</b> <%= @average %></h4>
 			</div>
 			<div class="col-md-6">
-				<h4> <b>Performance :</b> <%= @performance %> /10</h4>
+				<h4> <b>Average Performance :</b> 5.0 /10</h4>
 			</div>
 		</div>
 	</div>
@@ -45,6 +45,7 @@
 			  	<th>Id</th>
 			    <th>Name</th>
 			    <th>Salary</th>
+			    <th>Performance</th>
 			  </tr>
 
 			  <% @employees.each_with_index do |employee,index| %>
@@ -52,6 +53,7 @@
 			  	<td><%= index+1 %></td>
 			    <td><%= employee["ename"] %></td>
 			    <td><%= employee["salary"] %></td>
+			    <td><%= employee["performance"] %></td>
 			  </tr>
 			 <% end %>
 			</table>
