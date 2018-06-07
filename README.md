@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+HR Management System
+---------------------
 
-Things you may want to cover:
+APP FEATURES
+---------------------
 
-* Ruby version
+ * View salary of each employee.
+ * Segregate high paid employees.
+ * Segregate employees with low performance getting high salary.
+ * Segregate employees with high performance and low attendance.
+ * Admin panel.
+ 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    
