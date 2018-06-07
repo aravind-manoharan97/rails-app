@@ -4,6 +4,7 @@ class EmployeeDetail < ApplicationRecord
 	has_many :leave_takens
 	has_one :salary_detail
 
+	
 	def self.get_average_performance
 		
 		average_performances = []
