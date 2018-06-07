@@ -5,7 +5,7 @@ set :rails_env, :production
 set :normalize_asset_timestamps, %{public/images public/javascripts
 public/stylesheets}
 
-role :app, %w{ubuntu@18.188.14.67}
+role :app, %w{ubuntu@18.219.95.160}
 
 set :ssh_options, {
   keys: %w(/home/aravind/ArAvInD/WoRk/AWS/railsapp.pem),
