@@ -15,14 +15,16 @@ class Performance < ApplicationRecord
   	   
   	average_performances = EmployeeDetail.get_average_performance()
   	average_performances.each do |value|
-  		if value["salary"].to_i >= average_salary.to_i && value["points"] < 5
-        temp_obj_array = {}
-  			temp_obj_array["ename"] = value["name"]
-        temp_obj_array["salary"] = value["salary"]
-        temp_obj_array["average_salary"] = Salary.avg_salary
-        temp_obj_array["performance"] = value["points"]
-        low_perf << temp_obj_array
-  		end
+      if value["salary"].present? and value["points"].present?
+    		if value["salary"].to_i >= average_salary.to_i && value["points"] < 5
+          temp_obj_array = {}
+    			temp_obj_array["ename"] = value["name"]
+          temp_obj_array["salary"] = value["salary"]
+          temp_obj_array["average_salary"] = Salary.avg_salary
+          temp_obj_array["performance"] = value["points"]
+          low_perf << temp_obj_array
+    		end
+      end
   	end
     return low_perf
 
